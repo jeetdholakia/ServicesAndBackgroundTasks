@@ -7,7 +7,7 @@ import android.os.IBinder
 import androidx.core.app.NotificationCompat
 import dev.jeetdholakia.servicesandbackgroundtasks.Constants
 import dev.jeetdholakia.servicesandbackgroundtasks.Constants.Companion.channelID
-import dev.jeetdholakia.servicesandbackgroundtasks.Constants.Companion.notificationTitle
+import dev.jeetdholakia.servicesandbackgroundtasks.Constants.Companion.foregroundServiceNotificationTitle
 import dev.jeetdholakia.servicesandbackgroundtasks.R
 
 class MyForegroundService: Service() {
@@ -23,7 +23,7 @@ class MyForegroundService: Service() {
         val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0)
 
         val notification = NotificationCompat.Builder(this, channelID)
-            .setContentTitle(notificationTitle)
+            .setContentTitle(foregroundServiceNotificationTitle)
             .setContentText(input)
             .setSmallIcon(R.drawable.ic_android_24dp)
             .setContentIntent(pendingIntent)
