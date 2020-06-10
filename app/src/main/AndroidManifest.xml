@@ -3,7 +3,7 @@
     package="dev.jeetdholakia.servicesandbackgroundtasks">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:name=".BaseApplication"
@@ -12,19 +12,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".intentServices.IntentServiceActivity">
+
+        <activity android:name=".jobIntentServices.JobIntentServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".foregroundservices.MainActivity">
-        </activity>
+        <activity android:name=".intentServices.IntentServiceActivity"></activity>
+
+        <activity android:name=".foregroundservices.MainActivity"></activity>
 
         <service android:name=".foregroundservices.MyForegroundService" />
-
         <service android:name=".intentServices.MyIntentService" />
+        <service android:name=".jobIntentServices.MyJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
     </application>
 
 </manifest>
