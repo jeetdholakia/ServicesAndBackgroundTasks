@@ -4,4 +4,6 @@
     <string name="start_service">Start service</string>
     <string name="stop_service">Stop Service</string>
     <string name="enqueue_work">Enqueue Work</string>
+    <string name="schedule_job">Schedule Job</string>
+    <string name="cancel_job">Cancel Job</string>
 </resources>
