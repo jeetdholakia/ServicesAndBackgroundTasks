@@ -12,6 +12,9 @@ class Constants {
         const val foregroundServiceNotificationTitle = "My Foreground Services"
         const val foregroundIntentServiceNotificationTitle = "My Foreground Intent Service"
         const val notificationChannelName = "My Service Channel"
+
+        // Job scheduler Constants
+        const val jobId = 123
     }
 
 }
