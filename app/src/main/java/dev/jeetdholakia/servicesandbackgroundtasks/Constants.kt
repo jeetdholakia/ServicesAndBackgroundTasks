@@ -9,7 +9,8 @@ class Constants {
 
         // Notification Constants
         const val channelID = "myServiceChannel"
-        const val notificationTitle = "My Service"
+        const val foregroundServiceNotificationTitle = "My Foreground Service"
+        const val foregroundIntentServiceNotificationTitle = "My Foreground Intent Service"
         const val notificationChannelName = "My Service Channel"
     }
 
