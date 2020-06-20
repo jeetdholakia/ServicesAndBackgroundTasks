@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="dev.jeetdholakia.backgroundthreads.BackgroundThreadActivity"></activity>
         <activity android:name=".jobScheduler.JobSchedulerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,10 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".jobIntentServices.JobIntentServiceActivity">
-
-        </activity>
+        <activity android:name=".jobIntentServices.JobIntentServiceActivity"></activity>
         <activity android:name=".intentServices.IntentServiceActivity" />
         <activity android:name=".foregroundservices.MainActivity" />
 
@@ -32,9 +30,9 @@
         <service
             android:name=".jobIntentServices.MyJobIntentService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
-
-        <service android:name=".jobScheduler.MyJobScheduler"
-            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service
+            android:name=".jobScheduler.MyJobScheduler"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
     </application>
 
 </manifest>
